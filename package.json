@@ -1,0 +1,23 @@
+{
+  "name": "uniapp-components",
+  "version": "0.0.0-alpha",
+  "description": "由hai2007维护的uni-app组件库",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hai2007/uniapp-components.git"
+  },
+  "keywords": [
+    "uni-app",
+    "components"
+  ],
+  "author": "hai2007",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hai2007/uniapp-components/issues"
+  },
+  "homepage": "https://github.com/hai2007/uniapp-components#readme",
+  "dependencies": {
+    "@hai2007/algorithm": "^0.5.0",
+    "@hai2007/tool": "^0.4.0"
+  }
+}

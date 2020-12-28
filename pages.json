@@ -1,0 +1,20 @@
+{
+    "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+        {
+            "path": "pages/home/home"
+        }
+    ],
+    "easycom": {
+        "autoscan": true,
+        "custom": {
+            // 这里的引入是为了可以直接使用这个组件库中的东西
+            "^hai2007-(.*)": "@/libs/hai2007-$1/hai2007-$1.vue"
+        }
+    },
+    "globalStyle": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "uni-app组件库",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8"
+    }
+}
