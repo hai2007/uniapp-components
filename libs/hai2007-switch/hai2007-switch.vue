@@ -1,11 +1,11 @@
 <template>
   <text>
-    下拉
+    开关
   </text>
 </template>
 <script>
 export default {
-  name: "hai2007Select"
+  name: "hai2007Switch"
 };
 </script>
 <style scoped lang='scss'>

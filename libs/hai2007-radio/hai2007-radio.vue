@@ -1,11 +1,11 @@
 <template>
   <text>
-    下拉
+    单选
   </text>
 </template>
 <script>
 export default {
-  name: "hai2007Select"
+  name: "hai2007Radio"
 };
 </script>
 <style scoped lang='scss'>

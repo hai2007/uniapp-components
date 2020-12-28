@@ -1,11 +1,11 @@
 <template>
   <text>
-    下拉
+    日历
   </text>
 </template>
 <script>
 export default {
-  name: "hai2007Select"
+  name: "hai2007Datepicker"
 };
 </script>
 <style scoped lang='scss'>

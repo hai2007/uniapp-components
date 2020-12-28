@@ -36,6 +36,20 @@ npm install --save uniapp-components
 }
 ```
 
+上面都操作完成以后，如果你准备使用本组件库的组件，直接在```.vue```文件中输入```<hai2007-```即可获得代码提示。
+
+## 组件列表
+
+所有内置的组件都在下面列出，请点击查阅对应文档：
+
+- [复选框](./docs/checkbox.md)
+- [单选框](./docs/radio.md)
+- [开关](./docs/switch.md)
+- [日历](./docs/datepicker.md)
+- [时间](./docs/timepicker.md)
+- [下拉](./docs/select.md)
+- [轮播](./docs/swiper.md)
+
 ## 联系我们
 
 - QQ: 2501482523

@@ -1,7 +1,7 @@
 {
   "name": "uniapp-components",
   "version": "0.0.0-alpha",
-  "description": "由hai2007维护的uni-app组件库",
+  "description": "uni-app组件库",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hai2007/uniapp-components.git"
