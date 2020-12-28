@@ -42,13 +42,13 @@ npm install --save uniapp-components
 
 所有内置的组件都在下面列出，请点击查阅对应文档：
 
-- [复选框](./docs/checkbox.md)
-- [单选框](./docs/radio.md)
-- [开关](./docs/switch.md)
-- [日历](./docs/datepicker.md)
-- [时间](./docs/timepicker.md)
-- [下拉](./docs/select.md)
-- [轮播](./docs/swiper.md)
+- [1.复选框](./docs/checkbox.md)
+- [2.单选框](./docs/radio.md)
+- [3.开关](./docs/switch.md)
+- [4.日历](./docs/datepicker.md)
+- [5.时间](./docs/timepicker.md)
+- [6.下拉](./docs/select.md)
+- [7.轮播](./docs/swiper.md)
 
 ## 联系我们
 
