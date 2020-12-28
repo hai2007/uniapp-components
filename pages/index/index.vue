@@ -8,9 +8,14 @@
         </view>
         <view>
             <text class='title'>3.开关</text>
-            <hai2007-switch v-model='switch_flag'></hai2007-switch>
-            当前状态：{{switch_flag}}
-
+            <view>
+                当前状态：{{switch_flag}}
+                <hai2007-switch v-model='switch_flag' :disabled="switch_disabled"></hai2007-switch>
+            </view>
+            <view>
+                右边的开关控制上边的开关是否可以点击：
+                <hai2007-switch v-model='switch_disabled'></hai2007-switch>
+            </view>
         </view>
         <view>
             <text class='title'>4.日历</text>
@@ -38,6 +43,7 @@
 
                 // 3.开关
                 switch_flag: true,
+                switch_disabled: false,
 
                 // 4.日历
 

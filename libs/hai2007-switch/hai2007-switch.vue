@@ -32,6 +32,11 @@
         },
         methods: {
             doChange() {
+
+                // 如果不可点击
+                if (this.disabled) return;
+
+                // 切换值
                 this.value_ = !this.value_;
                 this.$emit('input', this.value_);
             }
@@ -72,6 +77,18 @@
 
             &>view {
                 left: 2px;
+            }
+        }
+
+        /* 不可点击 */
+
+        &.disabled {
+            &.open {
+                background-color: #9dc2e0;
+            }
+
+            &.close {
+                background-color: #efedf4;
             }
         }
 
