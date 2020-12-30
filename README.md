@@ -6,7 +6,7 @@ uni-app组件库
   <a href="https://packagephobia.now.sh/result?p=uniapp-components"><img src="https://packagephobia.now.sh/badge?p=uniapp-components" alt="install size"></a>
   <a href="https://www.jsdelivr.com/package/npm/uniapp-components"><img src="https://data.jsdelivr.com/v1/package/npm/uniapp-components/badge" alt="CDN"></a>
   <a href="https://www.npmjs.com/package/uniapp-components"><img src="https://img.shields.io/npm/v/uniapp-components.svg" alt="Version"></a>
-  <a href="https://github.com/uniapp-components/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/uniapp-components.svg" alt="License"></a>
+  <a href="https://github.com/hai2007/uniapp-components/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/uniapp-components.svg" alt="License"></a>
 </p>
 
 ## 如何使用
@@ -42,8 +42,7 @@ npm install --save uniapp-components
 
 所有内置的组件都在下面列出，请点击查阅对应文档：
 
-1.功能型
-----
+```1.功能型```
 
 - [1.复选框](./docs/checkbox.md)
 - [2.单选框](./docs/radio.md)
@@ -53,18 +52,15 @@ npm install --save uniapp-components
 - [6.下拉](./docs/select.md)
 - [7.轮播](./docs/swiper.md)
 
-2.表单型
-----
+```2.表单型```
 
 暂无
 
-3.布局型
-----
+```3.布局型```
 
 暂无
 
-4.图表型
-----
+```4.图表型```
 
 暂无
 
