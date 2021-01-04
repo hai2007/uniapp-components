@@ -42,27 +42,21 @@ npm install --save uniapp-components
 
 所有内置的组件都在下面列出，请点击查阅对应文档：
 
-```1.功能型```
+```图表类```
 
-- [1.复选框](./docs/checkbox.md)
-- [2.单选框](./docs/radio.md)
-- [3.开关](./docs/switch.md)
-- [4.日历](./docs/datepicker.md)
-- [5.时间](./docs/timepicker.md)
-- [6.下拉](./docs/select.md)
-- [7.轮播](./docs/swiper.md)
-
-```2.表单型```
-
-暂无
-
-```3.布局型```
-
-暂无
-
-```4.图表型```
-
-暂无
+|  名称   |  组件  |  备注  |
+|  ----  |  ----  |  ----  |
+|  饼图  |  [pie](./docs/pie.md)  |  无  |
+|  圆环图  |  [ring](./docs/ring.md)  |  无  |
+|  线图  |  [line](./docs/line.md)  | （直线、曲线）  |
+|  柱状图  |  [column](./docs/column.md)  | （分组、堆叠、温度计）  |
+|  雷达图  |  [radar](./docs/radar.md)  |  无  |
+|  圆弧进度图  |  [arcbar](./docs/arcbar.md)  |  无  |
+|  仪表盘  |  [gauge](./docs/gauge.md)  |  无  |
+|  K线图  |  [candle](./docs/candle.md)  |  无  |
+|  玫瑰图  |  [rose](./docs/rose.md)  |  面积模式、半径模式  |
+|  漏斗图  |  [funnel](./docs/funnel.md)  |  无  |
+|  地图  |  [map](./docs/map.md)  |  无  |
 
 ## 联系我们
 
@@ -73,4 +67,4 @@ npm install --save uniapp-components
 ---------------------------------------
 [MIT](https://github.com/hai2007/uniapp-components/blob/master/LICENSE)
 
-Copyright (c) 2020 [hai2007](https://hai2007.gitee.io/sweethome/) 走一步，再走一步。
+Copyright (c) 2020-2021 [hai2007](https://hai2007.gitee.io/sweethome/) 走一步，再走一步。

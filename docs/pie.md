@@ -1,3 +1,3 @@
-# hai2007-checkbox:复选框
+# hai2007-pie:饼图
 
 [<< 返回首页](../README.md)
