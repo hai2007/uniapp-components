@@ -1,3 +1,3 @@
 <template>
-    <view></view>
+    <view>饼图</view>
 </template>
