@@ -1,8 +1,8 @@
 <template>
     <view class="view">
-        <navigator url="../pie/pie">
+        <navigator url="../clunch/clunch">
             <button type="primary">
-                hai2007-pie
+                hai2007-clunch
             </button>
         </navigator>
     </view>

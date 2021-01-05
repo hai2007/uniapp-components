@@ -19,6 +19,6 @@
   "dependencies": {
     "@hai2007/algorithm": "^0.5.0",
     "@hai2007/tool": "^0.4.0",
-    "clunch": "^0.3.1"
+    "clunch": "^0.4.0"
   }
 }

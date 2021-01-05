@@ -3,9 +3,9 @@
         {
             "path": "pages/index/index"
         }, {
-            "path": "pages/pie/pie",
+            "path": "pages/clunch/clunch",
             "style": {
-                "navigationBarTitleText": "饼图",
+                "navigationBarTitleText": "clunch",
                 "enablePullDownRefresh": false
             }
 

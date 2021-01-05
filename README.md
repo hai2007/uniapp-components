@@ -42,21 +42,12 @@ npm install --save uniapp-components
 
 所有内置的组件都在下面列出，请点击查阅对应文档：
 
-```【图表类】```
 
 |  名称   |  组件  |  备注  |
 |  ----  |  ----  |  ----  |
-|  饼图  |  [pie](./docs/pie.md)  |  无  |
-|  圆环图  |  [ring](./docs/ring.md)  |  无  |
-|  线图  |  [line](./docs/line.md)  | （直线、曲线）  |
-|  柱状图  |  [column](./docs/column.md)  | （分组、堆叠、温度计）  |
-|  雷达图  |  [radar](./docs/radar.md)  |  无  |
-|  圆弧进度图  |  [arcbar](./docs/arcbar.md)  |  无  |
-|  仪表盘  |  [gauge](./docs/gauge.md)  |  无  |
-|  K线图  |  [candle](./docs/candle.md)  |  无  |
-|  玫瑰图  |  [rose](./docs/rose.md)  |  面积模式、半径模式  |
-|  漏斗图  |  [funnel](./docs/funnel.md)  |  无  |
-|  地图  |  [map](./docs/map.md)  |  无  |
+|  vue内嵌[clunch]框架  |  [hai2007-clunch](./docs/clunch.md)  |  可以帮助你在vue项目中内嵌图形框架[clunch]  |
+
+[clunch]: https://hai2007.gitee.io/clunch/
 
 ## 联系我们
 
