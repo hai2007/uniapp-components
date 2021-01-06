@@ -1,8 +1,13 @@
 <template>
     <view class="view">
-        <navigator url="../clunch/clunch">
+        <navigator url="../calendar/calendar">
             <button type="primary">
-                hai2007-clunch
+                日历
+            </button>
+        </navigator>
+        <navigator url="../select/select">
+            <button type="primary">
+                下拉
             </button>
         </navigator>
     </view>
@@ -22,9 +27,7 @@
 </script>
 
 <style scoped lang="scss">
-
-button{
-    margin: 30rpx;
-}
-
+    button {
+        margin: 30rpx;
+    }
 </style>

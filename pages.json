@@ -3,9 +3,16 @@
         {
             "path": "pages/index/index"
         }, {
-            "path": "pages/clunch/clunch",
+            "path": "pages/calendar/calendar",
             "style": {
-                "navigationBarTitleText": "clunch",
+                "navigationBarTitleText": "日历",
+                "enablePullDownRefresh": false
+            }
+
+        }, {
+            "path": "pages/select/select",
+            "style": {
+                "navigationBarTitleText": "下拉",
                 "enablePullDownRefresh": false
             }
 

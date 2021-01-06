@@ -45,9 +45,8 @@ npm install --save uniapp-components
 
 |  名称   |  组件  |  备注  |
 |  ----  |  ----  |  ----  |
-|  vue内嵌[clunch]框架  |  [hai2007-clunch](./docs/clunch.md)  |  可以帮助你在vue项目中内嵌图形框架[clunch]  |
-
-[clunch]: https://hai2007.gitee.io/clunch/
+|  日历  |  [hai2007-calendar](./docs/calendar.md)  |  无  |
+|  下拉  |  [hai2007-select](./docs/select.md)  |  无  |
 
 ## 联系我们
 
