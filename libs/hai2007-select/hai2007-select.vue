@@ -2,11 +2,11 @@
     <view class='mask' :class='{show:flag}' @click.stop="close()">
         <view class='select-view'>
             <view class="btns">
-                <text>取消</text>
-                <text>确定</text>
+                <text @click.stop="close()">取消</text>
+                <text @click.stop="doSelect()">确定</text>
             </view>
             <view class='list'>
-                <view class='item' v-for='item in showlist' @click.stop="doSelect(item.val)" :class="{selected:item.selected}">
+                <view class='item' v-for='item in showlist' :class="{selected:item.val==curVal}">
                     <text>{{item.label}}</text>
                 </view>
             </view>
@@ -54,13 +54,13 @@
         data() {
 
             return {
-                value_: this.value,
+                curVal: "",
                 showlist: [],
                 flag: false
             };
         },
         methods: {
-            initShowList(list, init) {
+            initShowList(list) {
                 // 对一些特殊的非必输项进行初始化
                 if (this.label == "") this.label = this.item;
                 if (this.val == "") this.val = this.item;
@@ -75,8 +75,7 @@
                     let val_temp = evalExpress(scope, this.val);
                     showlist.push({
                         label: evalExpress(scope, this.label),
-                        val: val_temp,
-                        selected: val_temp == init ? true : false
+                        val: evalExpress(scope, this.val)
                     });
                 }
                 this.showlist = showlist;
@@ -91,9 +90,10 @@
             open(list, init, callback) {
 
                 _callback = callback;
+                this.curVal = init;
 
                 // 初始化显示列表
-                this.initShowList(list, init);
+                this.initShowList(list);
 
                 // 显示
                 this.flag = true;
@@ -108,11 +108,10 @@
             },
 
             /**
-             * @param {any} val 选择的数据
              * 确定选择
              */
-            doSelect(val) {
-                _callback(val);
+            doSelect() {
+                _callback(this.curVal);
                 this.close();
             }
         }
@@ -120,18 +119,16 @@
 </script>
 <style lang="scss">
     .mask {
-        display: none;
+        bottom: -100vh;
         position: fixed;
         left: 0;
-        top: 0;
         width: 100vw;
         height: 100vh;
         background-color: rgba(156, 147, 147, 0.35);
-        ;
         z-index: 1;
 
         &.show {
-            display: block;
+            bottom: 0;
 
             &>.select-view {
                 bottom: 0;
@@ -140,8 +137,8 @@
 
         &>.select-view {
             position: fixed;
-            bottom: -150rpx;
-            transition-duration: 200ms;
+            bottom: -200rpx;
+            transition-duration: 500ms;
             transition-property: bottom;
             width: 100vw;
             background-color: white;
@@ -161,6 +158,7 @@
             &>.btns {
                 display: flex;
                 justify-content: space-between;
+                font-size: 26rpx;
 
                 &>text {
                     padding: 10rpx;
