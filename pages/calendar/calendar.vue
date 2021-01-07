@@ -1,7 +1,7 @@
 <template>
     <view>
 
-        <hai2007-calendar ref='calendar' lang="en"></hai2007-calendar>
+        <hai2007-calendar ref='calendar' lang="zh-cn"></hai2007-calendar>
 
         <button class='button' @click="openCalendar">
             打开日历
@@ -14,14 +14,14 @@
     export default {
         data() {
             return {
-
+                curDate:[]
             }
         },
         methods: {
             openCalendar() {
-                this.$refs.calendar.open([], data => {
-                    console.log(data);
-                    this.val1 = data;
+                this.$refs.calendar.open(this.curDate, data => {
+                    // console.log(data);
+                    this.curDate = data;
                 });
             }
         }

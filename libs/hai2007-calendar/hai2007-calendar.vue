@@ -13,13 +13,17 @@
                 </view>
                 <view class='btns'>
                     <view class="nouse">
-                        <text>{{yearView[0]}}{{lang_.unit[0]}}</text>
+                        <text>{{yearView[0]-1}}{{lang_.unit[0]}}</text>
                     </view>
-                    <view class="click" @click="current[0]=item;openMonthView()" v-for='(item,index) in yearView' :key='index'>
+                    <view class="click" :class='[{
+                        today:today[0]==item,
+                        selected:init[0]==item
+                        }]'
+                        @click="current[0]=item;openMonthView()" v-for='(item,index) in yearView' :key='index'>
                         <text>{{item}}{{lang_.unit[0]}}</text>
                     </view>
                     <view class="nouse">
-                        <text>{{yearView[yearView.length-1]}}{{lang_.unit[0]}}</text>
+                        <text>{{yearView[yearView.length-1]+1}}{{lang_.unit[0]}}</text>
                     </view>
                 </view>
             </view>
@@ -35,7 +39,11 @@
                 </view>
                 <view class='btns'>
                     <!-- 点击条目 -->
-                    <view class="click" @click="current[1]=index+1;openDayView()" v-for='(item,index) in 12' :key='index'>
+                    <view class="click" :class='[{
+                         today:today[0]==current[0] && today[1]==index+1,
+                          selected:init[0]==current[0] && init[1]==index+1
+                    }]'
+                        @click="current[1]=index+1;openDayView()" v-for='(item,index) in 12' :key='index'>
                         <text>{{lang_.month[index]}}</text>
                     </view>
                 </view>
@@ -58,7 +66,11 @@
                     </view>
 
                     <!-- 点击条目 -->
-                    <view :class="item.type" @click="doSelect(item)" v-for='(item,index) in dayView' :key='index'>
+                    <view :class="[item.type,{
+                        today:today[0]==current[0] && today[1]==current[1] && today[2]==item.num,
+                        selected:init[0]==current[0] && init[1]==current[1] && init[2]==item.num
+                        }]"
+                        @click="doSelect(item)" v-for='(item,index) in dayView' :key='index'>
                         <text>{{item.num}}</text>
                     </view>
 
@@ -230,7 +242,7 @@
 
         &>.calendar-view {
             position: fixed;
-            bottom: -600rpx;
+            bottom: -700rpx;
             transition-duration: 500ms;
             transition-property: bottom;
             width: 100vw;
@@ -277,6 +289,22 @@
 
                         &.title {
                             font-weight: 800;
+                        }
+
+                        &:not(.nouse) {
+                            &>text {
+                                padding: 10rpx;
+                                min-width: 70rpx;
+                                display: inline-block;
+                            }
+
+                            &.today>text {
+                                background-color: #fff227;
+                            }
+
+                            &.selected>text {
+                                background-color: #007AFF;
+                            }
                         }
                     }
                 }
