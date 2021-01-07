@@ -3,7 +3,7 @@
 
         <hai2007-select ref='select' item='item' index='index' val="item.key" label='item.value'></hai2007-select>
 
-        <button @click="openSelect">
+        <button class='button' @click="openSelect">
             打开下拉
         </button>
 
@@ -49,7 +49,7 @@
     };
 </script>
 <style lang='scss'>
-    button {
+    .button {
         margin: 50rpx;
     }
 </style>

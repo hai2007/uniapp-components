@@ -1,12 +1,12 @@
 <template>
     <view class='mask' :class='{show:flag}' @click.stop="close()">
-        <view class='select-view'>
+        <view class='select-view' @click.stop>
             <view class="btns">
-                <text @click.stop="close()">取消</text>
-                <text @click.stop="doSelect()">确定</text>
+                <text @click="close()">取消</text>
+                <text @click="doSelect()">确定</text>
             </view>
             <view class='list'>
-                <view class='item' v-for='item in showlist' :class="{selected:item.val==curVal}">
+                <view class='item' v-for='item in showlist' :key='item.val' :class="{selected:item.val==curVal}">
                     <text>{{item.label}}</text>
                 </view>
             </view>
@@ -18,6 +18,8 @@
         evalExpress
     } from '@hai2007/algorithm/value.js';
 
+    let _callback = () => {};
+
     /**
      * Select 下拉
      * @description 单选下拉选择组件
@@ -27,9 +29,6 @@
      * @property {String} label 显示格式，默认取循环条目的值
      * @property {String} val 值格式，默认取循环条目的值
      */
-
-    let _callback = () => {};
-
     export default {
         name: "hai2007Select",
         props: {
