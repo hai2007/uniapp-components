@@ -1,6 +1,6 @@
 {
   "name": "uniapp-components",
-  "version": "0.0.0-alpha",
+  "version": "0.1.0",
   "description": "uni-app组件库",
   "repository": {
     "type": "git",
@@ -18,7 +18,6 @@
   "homepage": "https://github.com/hai2007/uniapp-components#readme",
   "dependencies": {
     "@hai2007/algorithm": "^0.5.0",
-    "@hai2007/tool": "^0.4.0",
-    "clunch": "^0.4.0"
+    "@hai2007/tool": "^0.4.0"
   }
 }

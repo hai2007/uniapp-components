@@ -5,11 +5,6 @@
                 日历
             </button>
         </navigator>
-        <navigator url="../select/select">
-            <button type="primary">
-                下拉
-            </button>
-        </navigator>
     </view>
 </template>
 

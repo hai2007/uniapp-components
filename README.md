@@ -45,8 +45,7 @@ npm install --save uniapp-components
 
 |  名称   |  组件  |  备注  |
 |  ----  |  ----  |  ----  |
-|  日历  |  [hai2007-calendar](./docs/calendar.md)  |  无  |
-|  下拉  |  [hai2007-select](./docs/select.md)  |  无  |
+|  日历  |  [hai2007-calendar](./docs/calendar.md)  |  日历（年月日）选择组件  |
 
 ## 联系我们
 

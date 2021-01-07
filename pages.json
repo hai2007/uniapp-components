@@ -9,13 +9,6 @@
                 "enablePullDownRefresh": false
             }
 
-        }, {
-            "path": "pages/select/select",
-            "style": {
-                "navigationBarTitleText": "下拉",
-                "enablePullDownRefresh": false
-            }
-
         }
     ],
     "easycom": {
